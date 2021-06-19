@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item {
+            background-color: darkcyan;
+            border: 5px solid rgb(0, 56, 56);
+            height: 70px;
+            width: 140px;
+            font-size: 2em;
+            margin: 0px;
+            transition: ease-in-out .15s;
+            border-radius: .9em;
+        }
+        .item:hover {
+            height: 80px;
+            width: 150px;
+            background: linear-gradient(54deg, rgb(255, 255, 255), rgb(103, 255, 255));
+            border: 5px solid rgb(0, 175, 175);
+        }
+        .items {
+            margin: 0px;
+        }
+        body {
+            margin: 7px;
+        }
+        .btn-group {
+            display: inline-block;
+            background-color: rgb(0, 24, 24);
+            border: 5px solid black;
+            transition: ease-in-out .15s;
+        }
+        .btn-group:hover {
+            background-color: rgb(61, 85, 85);
+            border: 5px solid rgb(5, 37, 36);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="btn-group">
+        <div class="items">
+            <input type="button" class="item" onclick="item1()" value="Item 1">
+            <input type="button" class="item" onclick="item2()" value="Item 2">
+            <input type="button" class="item" onclick="item3()" value="Item 3">
+        </div>
+    </div>
+    <script>
+        function item1() {
+            alert("Item 1 actived for js")
+        }
+        function item2() {
+            alert("Item 2 actived for js")
+        }
+        function item3() {
+            alert("Item 3 actived for js")
+        }
+    </script>
+</body>
+
+</html>
